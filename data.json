@@ -1,0 +1,19 @@
+{
+  "year": 2026,
+  "ride_km": 0,
+  "moving_time_seconds": 0,
+  "elevation_gain_meters": 0,
+  "ride_days": 0,
+  "monthly_ride_days": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  "activity_count": 0,
+  "monthly": [],
+  "latest_ride": null,
+  "longest_ride": null,
+  "run_km": 0,
+  "run_moving_time_seconds": 0,
+  "run_days": 0,
+  "monthly_run_days": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  "latest_run": null,
+  "longest_run": null,
+  "updated_at": "2026-01-01 00:00:00"
+}

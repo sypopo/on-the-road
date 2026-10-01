@@ -57,12 +57,14 @@ jobs:
 
       - name: Create summary
         run: |
-          echo "## 🚴 Intervals.icu 数据同步完成" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "✅ 执行时间: $(date -d '+8 hours' -u '+%Y-%m-%d %H:%M:%S') (北京时间)" >>
-          echo "" >> $GITHUB_STEP_SUMMARY
-          if [ "${{ steps.check_changes.outputs.changed }}" == "true" ]; then
-            echo "📝 数据已更新并推送到仓库" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "⏭️ 数据无变化，跳过提交" >> $GITHUB_STEP_SUMMARY
-          fi
+          {
+            echo "## Intervals.icu 数据同步完成"
+            echo ""
+            echo "执行时间: $(date -d '+8 hours' -u '+%Y-%m-%d %H:%M:%S') (北京时间)"
+            echo ""
+            if [ "${{ steps.check_changes.outputs.changed }}" == "true" ]; then
+              echo "数据已更新并推送到仓库"
+            else
+              echo "数据无变化，跳过提交"
+            fi
+          } >> $GITHUB_STEP_SUMMARY

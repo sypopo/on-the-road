@@ -2,7 +2,7 @@ name: Sync Intervals.icu Data
 
 on:
   schedule:
-    - cron: '0 16 * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -59,7 +59,7 @@ jobs:
         run: |
           echo "## 🚴 Intervals.icu 数据同步完成" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "✅ 执行时间: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "✅ 执行时间: $(date -d '+8 hours' -u '+%Y-%m-%d %H:%M:%S') (北京时间)" >>
           echo "" >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.check_changes.outputs.changed }}" == "true" ]; then
             echo "📝 数据已更新并推送到仓库" >> $GITHUB_STEP_SUMMARY

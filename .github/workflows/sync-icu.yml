@@ -1,76 +1,68 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+name: Sync Intervals.icu Data
 
-import os
-import sys
-import subprocess
+on:
+  schedule:
+    - cron: '0 16 * * *'
+  workflow_dispatch:
 
-# 先安装 oss2
-try:
-    import oss2
-except ImportError:
-    print("安装 oss2...")
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "oss2"])
-    import oss2
+jobs:
+  sync:
+    runs-on: ubuntu-latest
 
-# 获取配置
-oss_key = os.getenv("OSS_KEY", "")
-oss_secret = os.getenv("OSS_SECRET", "")
-oss_endpoint = os.getenv("OSS_ENDPOINT", "")
-oss_bucket = os.getenv("OSS_BUCKET", "")
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-print()
-print("=" * 60)
-print("🧪 测试阿里云 OSS 连接")
-print("=" * 60)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
-if not all([oss_key, oss_secret, oss_endpoint, oss_bucket]):
-    print("❌ 配置不完整")
-    print(f"  OSS_KEY: {'✅' if oss_key else '❌'}")
-    print(f"  OSS_SECRET: {'✅' if oss_secret else '❌'}")
-    print(f"  OSS_ENDPOINT: {'✅' if oss_endpoint else '❌'}")
-    print(f"  OSS_BUCKET: {'✅' if oss_bucket else '❌'}")
-    sys.exit(1)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests oss2
 
-print(f"Bucket: {oss_bucket}")
-print(f"Endpoint: {oss_endpoint}")
+      - name: Run ICU sync script
+        env:
+          ICU_API_KEY: ${{ secrets.ICU_API_KEY }}
+          ICU_ATHLETE_ID: ${{ secrets.ICU_ATHLETE_ID }}
+          OSS_KEY: ${{ secrets.OSS_KEY }}
+          OSS_SECRET: ${{ secrets.OSS_SECRET }}
+          OSS_ENDPOINT: ${{ secrets.OSS_ENDPOINT }}
+          OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
+        run: python icu2json.py
 
-try:
-    # 创建连接
-    auth = oss2.Auth(oss_key, oss_secret)
-    bucket = oss2.Bucket(auth, f"https://{oss_endpoint}", oss_bucket)
+      - name: Check if data changed
+        id: check_changes
+        run: |
+          if git diff --quiet HEAD data.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
 
-    print()
-    print("正在上传测试文件...")
+      - name: Configure Git
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
 
-    # 上传测试文件
-    test_content = b'{"test": "success", "time": "' + str(__import__('datetime').datetime.now()).encode() + b'"}'
-    bucket.put_object("test.json", test_content)
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git add data.json
+          git commit -m "chore: update intervals.icu data $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          git push
 
-    print("✅ 上传成功！")
-
-    # 验证文件
-    print()
-    print("正在验证文件...")
-    obj = bucket.get_object("test.json")
-    content = obj.read()
-    print(f"✅ 验证成功！内容: {content.decode()}")
-
-    # 删除测试文件
-    print()
-    print("清理测试文件...")
-    bucket.delete_object("test.json")
-    print("✅ 清理完成")
-
-    print()
-    print("=" * 60)
-    print("🎉 OSS 连接测试成功！")
-    print("=" * 60)
-
-except Exception as e:
-    print()
-    print("=" * 60)
-    print(f"❌ OSS 连接失败")
-    print(f"错误信息: {e}")
-    print("=" * 60)
-    sys.exit(1)
+      - name: Create summary
+        run: |
+          echo "## 🚴 Intervals.icu 数据同步完成" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ 执行时间: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_changes.outputs.changed }}" == "true" ]; then
+            echo "📝 数据已更新并推送到仓库" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⏭️ 数据无变化，跳过提交" >> $GITHUB_STEP_SUMMARY
+          fi

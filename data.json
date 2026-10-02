@@ -1,8 +1,8 @@
 {
   "year": 2026,
-  "ride_km": 10611.13,
-  "moving_time_seconds": 1212396,
-  "elevation_gain_meters": 75104.0,
+  "ride_km": 10625.7,
+  "moving_time_seconds": 1214420,
+  "elevation_gain_meters": 75256.0,
   "ride_days": 189,
   "monthly_ride_days": [
     19,
@@ -18,7 +18,7 @@
     0,
     0
   ],
-  "activity_count": 199,
+  "activity_count": 200,
   "monthly": [
     {
       "month": "2026-01",
@@ -85,10 +85,10 @@
     },
     {
       "month": "2026-10",
-      "ride_km": 56.28,
-      "elevation_gain_m": 561.0,
+      "ride_km": 70.85,
+      "elevation_gain_m": 713.0,
       "ride_days": 1,
-      "moving_time_seconds": 6115
+      "moving_time_seconds": 8139
     },
     {
       "month": "2026-11",
@@ -106,23 +106,23 @@
     }
   ],
   "latest_ride": {
-    "id": "i192474725",
-    "name": "Morning 骑行",
+    "id": "i192554842",
+    "name": "Afternoon 骑行",
     "type": "Ride",
     "date": "2026-10-02",
-    "datetime": "2026-10-02T09:00:31",
-    "distance_km": 56.28,
-    "moving_time_seconds": 6115,
-    "elevation_gain_m": 561.0,
-    "avg_speed_kmh": 33.08,
-    "max_speed_kmh": 54.72,
+    "datetime": "2026-10-02T16:40:45",
+    "distance_km": 14.57,
+    "moving_time_seconds": 2024,
+    "elevation_gain_m": 152.0,
+    "avg_speed_kmh": 25.44,
+    "max_speed_kmh": 45.16,
     "avg_power_w": null,
     "np_w": null,
     "max_power_w": null,
-    "avg_hr": 140,
-    "max_hr": 172,
-    "avg_pace_min_per_km": 1.81,
-    "avg_pace": "1'49\"/km",
+    "avg_hr": 119,
+    "max_hr": 151,
+    "avg_pace_min_per_km": 2.32,
+    "avg_pace": "2'19\"/km",
     "avg_cadence": 0.0,
     "max_cadence": null
   },
@@ -206,5 +206,5 @@
     "avg_cadence": 180.6,
     "max_cadence": null
   },
-  "updated_at": "2026-10-02 09:05:20"
+  "updated_at": "2026-10-02 10:05:20"
 }

@@ -2,7 +2,7 @@ name: Sync Intervals.icu Data
 
 on:
   schedule:
-    - cron: '22 * * * *'
+    - cron: '50 15 * * *'
   workflow_dispatch:
 
 jobs:

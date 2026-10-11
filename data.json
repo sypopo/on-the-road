@@ -147,9 +147,9 @@
     "avg_cadence": 161.3,
     "max_cadence": null
   },
-  "run_km": 452.31,
-  "run_moving_time_seconds": 137841,
-  "run_days": 41,
+  "run_km": 454.26,
+  "run_moving_time_seconds": 138284,
+  "run_days": 42,
   "monthly_run_days": [
     5,
     7,
@@ -160,29 +160,29 @@
     0,
     0,
     3,
-    3,
+    4,
     0,
     0
   ],
   "latest_run": {
-    "id": "i195760158",
-    "name": "Evening 跑步",
+    "id": "i195968503",
+    "name": "Lunch 跑步",
     "type": "Run",
-    "date": "2026-10-10",
-    "datetime": "2026-10-10T19:21:37",
-    "distance_km": 10.01,
-    "moving_time_seconds": 2836,
-    "elevation_gain_m": 312.8,
-    "avg_speed_kmh": 12.69,
-    "max_speed_kmh": 15.65,
+    "date": "2026-10-11",
+    "datetime": "2026-10-11T11:27:49",
+    "distance_km": 1.95,
+    "moving_time_seconds": 443,
+    "elevation_gain_m": 70.2,
+    "avg_speed_kmh": 15.67,
+    "max_speed_kmh": 21.56,
     "avg_power_w": null,
     "np_w": null,
     "max_power_w": null,
-    "avg_hr": 156,
-    "max_hr": 161,
-    "avg_pace_min_per_km": 4.72,
-    "avg_pace": "4'43\"/km",
-    "avg_cadence": 180.7,
+    "avg_hr": 160,
+    "max_hr": 181,
+    "avg_pace_min_per_km": 3.78,
+    "avg_pace": "3'47\"/km",
+    "avg_cadence": 190.3,
     "max_cadence": null
   },
   "longest_run": {
@@ -206,5 +206,5 @@
     "avg_cadence": 180.6,
     "max_cadence": null
   },
-  "updated_at": "2026-10-11 03:05:18"
+  "updated_at": "2026-10-11 04:05:20"
 }

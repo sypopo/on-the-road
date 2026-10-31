@@ -1,9 +1,9 @@
 {
   "year": 2026,
-  "ride_km": 11337.08,
-  "moving_time_seconds": 1299538,
-  "elevation_gain_meters": 83332.0,
-  "ride_days": 197,
+  "ride_km": 11497.32,
+  "moving_time_seconds": 1317056,
+  "elevation_gain_meters": 84646.0,
+  "ride_days": 198,
   "monthly_ride_days": [
     19,
     23,
@@ -14,11 +14,11 @@
     25,
     25,
     18,
-    9,
+    10,
     0,
     0
   ],
-  "activity_count": 208,
+  "activity_count": 209,
   "monthly": [
     {
       "month": "2026-01",
@@ -85,10 +85,10 @@
     },
     {
       "month": "2026-10",
-      "ride_km": 782.23,
-      "elevation_gain_m": 8789.0,
-      "ride_days": 9,
-      "moving_time_seconds": 93257
+      "ride_km": 942.47,
+      "elevation_gain_m": 10103.0,
+      "ride_days": 10,
+      "moving_time_seconds": 110775
     },
     {
       "month": "2026-11",
@@ -106,24 +106,24 @@
     }
   ],
   "latest_ride": {
-    "id": "i203072015",
-    "name": "Lunch 骑行",
+    "id": "i203807544",
+    "name": "Morning 骑行",
     "type": "Ride",
-    "date": "2026-10-29",
-    "datetime": "2026-10-29T13:31:55",
-    "distance_km": 91.22,
-    "moving_time_seconds": 12417,
-    "elevation_gain_m": 1881.0,
-    "avg_speed_kmh": 26.4,
-    "max_speed_kmh": 66.28,
-    "avg_power_w": 190,
-    "np_w": 244,
+    "date": "2026-10-31",
+    "datetime": "2026-10-31T10:03:24",
+    "distance_km": 160.24,
+    "moving_time_seconds": 17518,
+    "elevation_gain_m": 1314.0,
+    "avg_speed_kmh": 32.78,
+    "max_speed_kmh": 65.73,
+    "avg_power_w": 202,
+    "np_w": 224,
     "max_power_w": null,
-    "avg_hr": 135,
-    "max_hr": 173,
-    "avg_pace_min_per_km": 2.27,
-    "avg_pace": "2'16\"/km",
-    "avg_cadence": 156.5,
+    "avg_hr": 136,
+    "max_hr": 160,
+    "avg_pace_min_per_km": 1.82,
+    "avg_pace": "1'49\"/km",
+    "avg_cadence": 156.2,
     "max_cadence": null
   },
   "longest_ride": {
@@ -206,5 +206,5 @@
     "avg_cadence": 184.6,
     "max_cadence": null
   },
-  "updated_at": "2026-10-31 07:05:20"
+  "updated_at": "2026-10-31 08:05:19"
 }

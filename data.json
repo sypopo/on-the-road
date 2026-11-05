@@ -1,9 +1,9 @@
 {
   "year": 2026,
-  "ride_km": 11639.96,
-  "moving_time_seconds": 1333285,
-  "elevation_gain_meters": 85941.0,
-  "ride_days": 201,
+  "ride_km": 11680.85,
+  "moving_time_seconds": 1338057,
+  "elevation_gain_meters": 86398.0,
+  "ride_days": 202,
   "monthly_ride_days": [
     19,
     23,
@@ -15,10 +15,10 @@
     25,
     18,
     10,
-    3,
+    4,
     0
   ],
-  "activity_count": 213,
+  "activity_count": 214,
   "monthly": [
     {
       "month": "2026-01",
@@ -92,10 +92,10 @@
     },
     {
       "month": "2026-11",
-      "ride_km": 113.17,
-      "elevation_gain_m": 991.0,
-      "ride_days": 3,
-      "moving_time_seconds": 13119
+      "ride_km": 154.07,
+      "elevation_gain_m": 1448.0,
+      "ride_days": 4,
+      "moving_time_seconds": 17891
     },
     {
       "month": "2026-12",
@@ -106,24 +106,24 @@
     }
   ],
   "latest_ride": {
-    "id": "i205517689",
+    "id": "i205970224",
     "name": "Lunch 骑行",
     "type": "Ride",
-    "date": "2026-11-04",
-    "datetime": "2026-11-04T12:38:44",
-    "distance_km": 30.22,
-    "moving_time_seconds": 4146,
-    "elevation_gain_m": 496.0,
-    "avg_speed_kmh": 26.1,
-    "max_speed_kmh": 55.33,
-    "avg_power_w": 188,
-    "np_w": 241,
+    "date": "2026-11-05",
+    "datetime": "2026-11-05T12:37:39",
+    "distance_km": 40.89,
+    "moving_time_seconds": 4772,
+    "elevation_gain_m": 457.0,
+    "avg_speed_kmh": 30.77,
+    "max_speed_kmh": 59.63,
+    "avg_power_w": 215,
+    "np_w": 262,
     "max_power_w": null,
-    "avg_hr": 136,
-    "max_hr": 173,
-    "avg_pace_min_per_km": 2.29,
-    "avg_pace": "2'17\"/km",
-    "avg_cadence": 156.0,
+    "avg_hr": 143,
+    "max_hr": 170,
+    "avg_pace_min_per_km": 1.94,
+    "avg_pace": "1'57\"/km",
+    "avg_cadence": 172.0,
     "max_cadence": null
   },
   "longest_ride": {
@@ -206,5 +206,5 @@
     "avg_cadence": 184.6,
     "max_cadence": null
   },
-  "updated_at": "2026-11-05 05:05:19"
+  "updated_at": "2026-11-05 06:05:22"
 }

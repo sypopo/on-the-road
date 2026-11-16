@@ -1,9 +1,9 @@
 {
   "year": 2026,
-  "ride_km": 11845.65,
-  "moving_time_seconds": 1355926,
+  "ride_km": 11895.77,
+  "moving_time_seconds": 1360371,
   "elevation_gain_meters": 87930.0,
-  "ride_days": 206,
+  "ride_days": 207,
   "monthly_ride_days": [
     19,
     23,
@@ -15,10 +15,10 @@
     25,
     18,
     10,
-    8,
+    9,
     0
   ],
-  "activity_count": 218,
+  "activity_count": 219,
   "monthly": [
     {
       "month": "2026-01",
@@ -92,10 +92,10 @@
     },
     {
       "month": "2026-11",
-      "ride_km": 318.86,
+      "ride_km": 368.98,
       "elevation_gain_m": 2980.0,
-      "ride_days": 8,
-      "moving_time_seconds": 35760
+      "ride_days": 9,
+      "moving_time_seconds": 40205
     },
     {
       "month": "2026-12",
@@ -106,24 +106,24 @@
     }
   ],
   "latest_ride": {
-    "id": "i210181045",
-    "name": "Lunch 骑行",
-    "type": "Ride",
-    "date": "2026-11-15",
-    "datetime": "2026-11-15T12:21:27",
-    "distance_km": 40.82,
-    "moving_time_seconds": 3867,
-    "elevation_gain_m": 147.0,
-    "avg_speed_kmh": 38.0,
-    "max_speed_kmh": 43.93,
-    "avg_power_w": 262,
-    "np_w": 275,
+    "id": "i210727710",
+    "name": "Evening 虚拟骑行",
+    "type": "VirtualRide",
+    "date": "2026-11-16",
+    "datetime": "2026-11-16T18:51:34",
+    "distance_km": 50.11,
+    "moving_time_seconds": 4445,
+    "elevation_gain_m": 0.0,
+    "avg_speed_kmh": 40.03,
+    "max_speed_kmh": 52.34,
+    "avg_power_w": 159,
+    "np_w": 161,
     "max_power_w": null,
-    "avg_hr": 151,
-    "max_hr": 170,
-    "avg_pace_min_per_km": 1.58,
-    "avg_pace": "1'35\"/km",
-    "avg_cadence": 182.4,
+    "avg_hr": 129,
+    "max_hr": 142,
+    "avg_pace_min_per_km": 1.48,
+    "avg_pace": "1'29\"/km",
+    "avg_cadence": 187.3,
     "max_cadence": null
   },
   "longest_ride": {
@@ -206,5 +206,5 @@
     "avg_cadence": 184.6,
     "max_cadence": null
   },
-  "updated_at": "2026-11-16 12:05:18"
+  "updated_at": "2026-11-16 13:05:20"
 }

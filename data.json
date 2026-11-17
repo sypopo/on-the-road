@@ -1,9 +1,9 @@
 {
   "year": 2026,
-  "ride_km": 11895.77,
-  "moving_time_seconds": 1360371,
-  "elevation_gain_meters": 87930.0,
-  "ride_days": 207,
+  "ride_km": 11937.37,
+  "moving_time_seconds": 1364530,
+  "elevation_gain_meters": 88115.0,
+  "ride_days": 208,
   "monthly_ride_days": [
     19,
     23,
@@ -15,10 +15,10 @@
     25,
     18,
     10,
-    9,
+    10,
     0
   ],
-  "activity_count": 219,
+  "activity_count": 220,
   "monthly": [
     {
       "month": "2026-01",
@@ -92,10 +92,10 @@
     },
     {
       "month": "2026-11",
-      "ride_km": 368.98,
-      "elevation_gain_m": 2980.0,
-      "ride_days": 9,
-      "moving_time_seconds": 40205
+      "ride_km": 410.58,
+      "elevation_gain_m": 3165.0,
+      "ride_days": 10,
+      "moving_time_seconds": 44364
     },
     {
       "month": "2026-12",
@@ -106,24 +106,24 @@
     }
   ],
   "latest_ride": {
-    "id": "i210727710",
-    "name": "Evening 虚拟骑行",
-    "type": "VirtualRide",
-    "date": "2026-11-16",
-    "datetime": "2026-11-16T18:51:34",
-    "distance_km": 50.11,
-    "moving_time_seconds": 4445,
-    "elevation_gain_m": 0.0,
-    "avg_speed_kmh": 40.03,
-    "max_speed_kmh": 52.34,
-    "avg_power_w": 159,
-    "np_w": 161,
+    "id": "i211053006",
+    "name": "Lunch 骑行",
+    "type": "Ride",
+    "date": "2026-11-17",
+    "datetime": "2026-11-17T12:42:24",
+    "distance_km": 41.6,
+    "moving_time_seconds": 4159,
+    "elevation_gain_m": 185.0,
+    "avg_speed_kmh": 35.94,
+    "max_speed_kmh": 44.24,
+    "avg_power_w": 235,
+    "np_w": 263,
     "max_power_w": null,
-    "avg_hr": 129,
-    "max_hr": 142,
-    "avg_pace_min_per_km": 1.48,
-    "avg_pace": "1'29\"/km",
-    "avg_cadence": 187.3,
+    "avg_hr": 144,
+    "max_hr": 170,
+    "avg_pace_min_per_km": 1.67,
+    "avg_pace": "1'40\"/km",
+    "avg_cadence": 178.0,
     "max_cadence": null
   },
   "longest_ride": {
@@ -206,5 +206,5 @@
     "avg_cadence": 184.6,
     "max_cadence": null
   },
-  "updated_at": "2026-11-17 05:05:26"
+  "updated_at": "2026-11-17 06:05:21"
 }

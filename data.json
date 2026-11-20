@@ -1,9 +1,9 @@
 {
   "year": 2026,
-  "ride_km": 12017.96,
-  "moving_time_seconds": 1372173,
-  "elevation_gain_meters": 88448.0,
-  "ride_days": 210,
+  "ride_km": 12062.43,
+  "moving_time_seconds": 1377104,
+  "elevation_gain_meters": 88713.0,
+  "ride_days": 211,
   "monthly_ride_days": [
     19,
     23,
@@ -15,10 +15,10 @@
     25,
     18,
     10,
-    12,
+    13,
     0
   ],
-  "activity_count": 222,
+  "activity_count": 223,
   "monthly": [
     {
       "month": "2026-01",
@@ -92,10 +92,10 @@
     },
     {
       "month": "2026-11",
-      "ride_km": 491.17,
-      "elevation_gain_m": 3498.0,
-      "ride_days": 12,
-      "moving_time_seconds": 52007
+      "ride_km": 535.65,
+      "elevation_gain_m": 3763.0,
+      "ride_days": 13,
+      "moving_time_seconds": 56938
     },
     {
       "month": "2026-12",
@@ -106,24 +106,24 @@
     }
   ],
   "latest_ride": {
-    "id": "i212015503",
-    "name": "Evening 虚拟骑行",
-    "type": "VirtualRide",
-    "date": "2026-11-19",
-    "datetime": "2026-11-19T18:44:41",
-    "distance_km": 30.02,
-    "moving_time_seconds": 2603,
-    "elevation_gain_m": 0.0,
-    "avg_speed_kmh": 41.31,
-    "max_speed_kmh": 81.85,
-    "avg_power_w": 165,
-    "np_w": 172,
+    "id": "i212344055",
+    "name": "Lunch 骑行",
+    "type": "Ride",
+    "date": "2026-11-20",
+    "datetime": "2026-11-20T12:31:56",
+    "distance_km": 44.47,
+    "moving_time_seconds": 4931,
+    "elevation_gain_m": 265.0,
+    "avg_speed_kmh": 32.46,
+    "max_speed_kmh": 56.12,
+    "avg_power_w": 196,
+    "np_w": 239,
     "max_power_w": null,
-    "avg_hr": 129,
-    "max_hr": 168,
-    "avg_pace_min_per_km": 1.45,
-    "avg_pace": "1'27\"/km",
-    "avg_cadence": 191.3,
+    "avg_hr": 139,
+    "max_hr": 172,
+    "avg_pace_min_per_km": 1.85,
+    "avg_pace": "1'51\"/km",
+    "avg_cadence": 176.7,
     "max_cadence": null
   },
   "longest_ride": {
@@ -206,5 +206,5 @@
     "avg_cadence": 184.6,
     "max_cadence": null
   },
-  "updated_at": "2026-11-20 05:05:20"
+  "updated_at": "2026-11-20 06:05:18"
 }

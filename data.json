@@ -1,8 +1,8 @@
 {
   "year": 2026,
-  "ride_km": 12102.39,
-  "moving_time_seconds": 1381680,
-  "elevation_gain_meters": 89090.0,
+  "ride_km": 12112.05,
+  "moving_time_seconds": 1382875,
+  "elevation_gain_meters": 89117.0,
   "ride_days": 212,
   "monthly_ride_days": [
     19,
@@ -18,7 +18,7 @@
     14,
     0
   ],
-  "activity_count": 224,
+  "activity_count": 225,
   "monthly": [
     {
       "month": "2026-01",
@@ -92,10 +92,10 @@
     },
     {
       "month": "2026-11",
-      "ride_km": 575.6,
-      "elevation_gain_m": 4140.0,
+      "ride_km": 585.26,
+      "elevation_gain_m": 4167.0,
       "ride_days": 14,
-      "moving_time_seconds": 61514
+      "moving_time_seconds": 62709
     },
     {
       "month": "2026-12",
@@ -206,5 +206,5 @@
     "avg_cadence": 184.6,
     "max_cadence": null
   },
-  "updated_at": "2026-11-21 09:05:18"
+  "updated_at": "2026-11-21 10:05:15"
 }
